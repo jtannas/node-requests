@@ -3,7 +3,7 @@
 const getHtml = require('./https-functions.js').getHtml;
 
 const printLowercase = function consoleLogLowercaseHtml(html) {
-  // TODO
+  console.log(html.toLowerCase());
 };
 
 const requestOptions = {
@@ -11,4 +11,4 @@ const requestOptions = {
   path: '/http-examples/step6/lowercase.html'
 };
 
-getHtml(requestOptions, printHtml);
+getHtml(requestOptions, printLowercase);
