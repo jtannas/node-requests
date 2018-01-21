@@ -1,6 +1,6 @@
 // print_reverse.js : Reverses the html string and then prints it to the console.
 
-const getHtml = require('./http-functions.js').getHtml;
+const getHtml = require('./https-functions.js').getHtml;
 
 const printReverse = function consoleLogReverseHtml(html) {
   // TODO

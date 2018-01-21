@@ -1,6 +1,6 @@
 // print_uppercase.js : Transforms the html string into ALL CAPS and prints it to the console.
 
-const getHtml = require('./http-functions.js').getHtml;
+const getHtml = require('./https-functions.js').getHtml;
 
 const printUppercase = function consoleLogUpperCaseHtml(html) {
   // TODO
