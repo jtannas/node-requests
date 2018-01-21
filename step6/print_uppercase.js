@@ -3,7 +3,7 @@
 const getHtml = require('./https-functions.js').getHtml;
 
 const printUppercase = function consoleLogUpperCaseHtml(html) {
-  // TODO
+  console.log(html.toUpperCase());
 };
 
 const requestOptions = {
@@ -11,4 +11,4 @@ const requestOptions = {
   path: '/http-examples/step6/uppercase.html'
 };
 
-getHtml(requestOptions, printHtml);
+getHtml(requestOptions, printUppercase);
