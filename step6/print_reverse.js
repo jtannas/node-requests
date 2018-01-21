@@ -3,7 +3,7 @@
 const getHtml = require('./https-functions.js').getHtml;
 
 const printReverse = function consoleLogReverseHtml(html) {
-  // TODO
+  console.log(html.split('').reverse().join(''));
 };
 
 const requestOptions = {
@@ -11,4 +11,4 @@ const requestOptions = {
   path: '/http-examples/step6/reverse.html'
 };
 
-getHtml(requestOptions, printHtml);
+getHtml(requestOptions, printReverse);
