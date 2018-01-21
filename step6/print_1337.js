@@ -23,7 +23,23 @@
 const getHtml = require('./https-functions.js').getHtml;
 
 const print1337 = function consoleLogLeetspeakHtml(html) {
-  // TODO
+  substitutions = {
+    '0r': /er/gi,
+    'j00': /\by[o0]u\b/gi,
+    '4': /a/gi,
+    '3': /e[^r]/gi,
+    '1': /l/gi,
+    '0': /o/gi,
+    '5': /s/gi,
+    '7': /t/gi,
+    'x': /ck/gi
+  };
+  let leetspeak = html;
+  Object.keys(substitutions).forEach(key => {
+    console.log(key);
+    leetspeak = leetspeak.replace(substitutions[key], key);
+  });
+  console.log(leetspeak);
 };
 
 const requestOptions = {
@@ -31,4 +47,4 @@ const requestOptions = {
   path: '/http-examples/step6/1337.html'
 };
 
-getHtml(requestOptions, printHtml);
+getHtml(requestOptions, print1337);
